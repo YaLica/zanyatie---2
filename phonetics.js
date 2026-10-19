@@ -2,9 +2,9 @@
   'use strict';
 
   const objects = {
-    cat: {label: 'кошка', image: 'assets/sluh-koshka.jpg'},
-    car: {label: 'машинка', image: 'assets/sluh-mashina.jpg'},
-    leaves: {label: 'осенние листья', image: 'assets/sluh-listya.jpg'}
+    cat: {label: 'кошка', image: 'sluh-koshka.jpg'},
+    car: {label: 'машинка', image: 'sluh-mashina.jpg'},
+    leaves: {label: 'осенние листья', image: 'sluh-listya.jpg'}
   };
   const rounds = [
     [{object: 'cat', file: 'кошка.mp3', correct: true},
@@ -125,7 +125,7 @@
     heard.textContent = 'Запись ' + (position + 1);
     const audio = document.createElement('audio');
     audio.preload = 'none';
-    audio.src = 'audio/' + card.file;
+    audio.src = '' + card.file;
     audio.hidden = true;
     audio.setAttribute('controlslist', 'nodownload');
     const error = document.createElement('p');
